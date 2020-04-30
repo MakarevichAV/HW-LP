@@ -28,6 +28,7 @@ $color2: #F6F6F6; // цвет для контентного текста
     }
     .logo {
         display: none;
+        cursor: pointer;
         width: 65px;
         background: url(../images/logo.png) no-repeat center center / contain;
     }
@@ -58,8 +59,12 @@ $color2: #F6F6F6; // цвет для контентного текста
             padding: 0 5px;
             color: #9F9F9F;
             font-size: 15px;
+            &:hover {
+                color: $color1;    
+            }
         }
         .active {
+            cursor: initial;
             display: flex;
             position: relative;
             color: $color1;
@@ -329,7 +334,7 @@ footer {
         margin-right: 17px;
         width: 22px;
         height: 22px;
-        background: url(../images/ikons/star.png) no-repeat center center/contain;
+        // background: url(../images/ikons/star.png) no-repeat center center/contain;
         cursor: pointer;
     }
 

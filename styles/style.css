@@ -32,6 +32,7 @@
 
 .header .logo {
   display: none;
+  cursor: pointer;
   width: 65px;
   background: url(../images/logo.png) no-repeat center center/contain;
 }
@@ -85,7 +86,12 @@
   font-size: 15px;
 }
 
+.header nav a:hover {
+  color: white;
+}
+
 .header nav .active {
+  cursor: initial;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +429,6 @@ footer p {
     margin-right: 17px;
     width: 22px;
     height: 22px;
-    background: url(../images/ikons/star.png) no-repeat center center/contain;
     cursor: pointer;
   }
   .picture .content .description {

@@ -99,11 +99,11 @@
             </p>
             <form action="/posturl/newsletter/" method="POST">
                 <label>
-                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="name" placeholder="Name" required pattern="[A-Za-z]{2,30}" >
                     <div class="before"></div>
                 </label>
                 <label>
-                    <input type="email" name="email" placeholder="E-Mail">
+                    <input type="email" name="email" placeholder="E-Mail" required >
                     <div class="before"></div>
                 </label>
                 <button type="submit">GET STARTED FOR FREE</button>
