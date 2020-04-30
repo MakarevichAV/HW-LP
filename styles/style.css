@@ -119,6 +119,7 @@
   background-color: rgba(255, 255, 255, 0);
   color: #FFFFFF;
   font-size: 13px;
+  width: 140px;
 }
 
 .header .search [type="search"]::-webkit-input-placeholder {
@@ -176,6 +177,7 @@
   font-size: 25px;
   color: white;
   margin-bottom: 15px;
+  line-height: 30px;
 }
 
 .picture .content .actions {
@@ -252,6 +254,10 @@
   background: url(../images/ikons/star-active.png) no-repeat center center/contain;
 }
 
+.picture .content .description .reviews p {
+  margin-bottom: 0;
+}
+
 .form {
   background-color: #1F1F2F;
   padding: 30px 20px 20px;
@@ -272,7 +278,7 @@
 .form .content form input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 40px;
+  padding: 0 0 0 40px;
   font-size: 17px;
   color: #505050;
   position: relative;
@@ -350,5 +356,131 @@ footer nav a {
 
 footer p {
   color: #BAC5D3;
+}
+
+@media (min-width: 768px) {
+  .header .menu-btn .btn-el div {
+    height: 10px;
+    width: 10px;
+    margin: 2.5px;
+    background: white;
+  }
+  .header nav a {
+    margin: 0 18px;
+    font-size: 18px;
+  }
+  .header .search [type="search"] {
+    font-size: 14px;
+    width: 170px;
+  }
+  .header .search .search-icon {
+    padding: 10px;
+    margin: 0 20px 0 40px;
+  }
+  .picture {
+    min-height: 810px;
+    padding: 110px 90px 85px 90px;
+    background: url(../images/bg-desktop.png) no-repeat center left/cover;
+  }
+  .picture .content h1 {
+    max-width: 500px;
+    font-size: 90px;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 100px;
+  }
+  .picture .content .actions {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 80px;
+  }
+  .picture .content .actions .item {
+    margin-right: 50px;
+  }
+  .picture .content .actions .item {
+    font-size: 18px;
+  }
+  .picture .content .actions .item span.watch, .picture .content .actions .item span.mark {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    background-size: 12px;
+  }
+  .picture .content .description h2 {
+    font-size: 18px;
+  }
+  .picture .content .description p {
+    font-size: 24px;
+  }
+  .picture .content .description .reviews div .star {
+    margin-right: 17px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/ikons/star.png) no-repeat center center/contain;
+    cursor: pointer;
+  }
+  .picture .content .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .picture .content .description .description-item {
+    margin-right: 80px;
+    margin-bottom: 18px;
+  }
+  .picture .content .description .description-item:nth-last-child(1) {
+    width: 100%;
+  }
+  .form {
+    padding-bottom: 55px;
+  }
+  .form .content form input, .form .content form button {
+    width: 100%;
+    min-width: 50px;
+    height: 53px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .form .content {
+    max-width: 530px;
+    margin: 0 auto;
+  }
+  .form .content p {
+    font-size: 25px;
+  }
+  .form .content form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form .content form label {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin: 15px;
+  }
+  .form .content form button {
+    margin: 15px;
+  }
+  footer {
+    background: #404754;
+    padding: 30px;
+    font-size: 20px;
+  }
+  footer nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer nav a {
+    margin-right: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
