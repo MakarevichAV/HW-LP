@@ -28,6 +28,8 @@ $color2: #F6F6F6; // цвет для контентного текста
     }
     .logo {
         display: none;
+        width: 65px;
+        background: url(../images/logo.png) no-repeat center center / contain;
     }
     .menu-btn {
         cursor: pointer;
@@ -54,12 +56,13 @@ $color2: #F6F6F6; // цвет для контентного текста
             display: none;
             align-items: center;
             padding: 0 5px;
-            color: $color1;
+            color: #9F9F9F;
             font-size: 15px;
         }
         .active {
             display: flex;
             position: relative;
+            color: $color1;
             &:before {
                 content: "";
                 position: absolute;
@@ -194,6 +197,7 @@ $color2: #F6F6F6; // цвет для контентного текста
             font-size: 17px;
             color: $color1;
             margin-bottom: 20px;
+            text-align: center;
         }
         form {
             input, button {
@@ -216,6 +220,7 @@ $color2: #F6F6F6; // цвет для контентного текста
                 color: white;
                 font-size: 17px;
                 margin-bottom: 20px;
+                padding: 0 20px;
             }
 
             label {
@@ -375,6 +380,73 @@ footer {
             flex-direction: row;
             a {
                 margin-right: 30px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .header {
+        min-height: 80px;
+        .logo {
+            display: block;
+            margin-left: 40px;
+            margin-right: 100px;
+        }
+        .menu-btn {
+            display: none;
+        }
+        nav {
+            min-height: 80px;
+            a {
+                display: flex;
+                margin-right: 50px;
+            }
+        }
+    }
+
+    .picture {
+        padding-top: 160px;
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+
+            .description {
+                .description-item:nth-last-child(1) {
+                    width: initial;
+                }
+            }
+        }
+
+    }
+
+    .form {
+        .content {
+            max-width: 1000px;
+            p {
+                font-size: 35px;
+            }
+            form {
+                label, button {
+                    flex-grow: 1;
+                }
+                button {
+                    width: initial;
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        nav {
+            margin-bottom: 0;
+            a {
+                margin-bottom: 0;
             }
         }
     }
