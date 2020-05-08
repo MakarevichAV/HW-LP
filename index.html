@@ -38,13 +38,14 @@
             </nav>
             <div class="search">
                 <label>
-                    <div class="search-icon"></div>
-                    <input type="search" name="search" placeholder="Search for details…">
+                    <!-- <div class="search-icon"></div> -->
+                    <img src="images/ikons/search.svg" width="20" height="20" class="search-icon" />
+                    <input type="search" name="search" placeholder="Search for details…" class="input-search">
                 </label>
             </div>
         </div>
     </header>
-    <div class="picture">
+    <main class="main">
         <div class="cover"></div>
         <div class="content">
             <h1>Honda <br />Sport <br />CRF 450RX</h1>
@@ -89,7 +90,7 @@
                 
             </div>
         </div>
-    </div>
+    </main>
     <div class="form">
         <div class="content">
             <p>
@@ -98,13 +99,13 @@
                 Get free trial for 3 month.
             </p>
             <form action="/posturl/newsletter/" method="POST">
-                <label>
-                    <input type="text" name="name" placeholder="Name" required pattern="[A-Za-z]{2,30}" >
-                    <div class="before"></div>
+                <label class="name">
+                    <input type="text" name="name" placeholder="Name" required pattern="[A-Za-z]{2,30}" maxlength="30">
+                    <!-- <div class="before"></div> -->
                 </label>
-                <label>
+                <label class="email">
                     <input type="email" name="email" placeholder="E-Mail" required >
-                    <div class="before"></div>
+                    <!-- <div class="before"></div> -->
                 </label>
                 <button type="submit">GET STARTED FOR FREE</button>
             </form>
