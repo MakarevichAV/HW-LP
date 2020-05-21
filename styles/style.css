@@ -102,7 +102,7 @@
   display: flex;
 }
 
-.btn-el div {
+.btn-el .item {
   height: 5px;
   width: 5px;
   margin: 1.5px;
@@ -167,13 +167,14 @@
           box-sizing: border-box;
 }
 
-.main .cover {
-  background: rgba(0, 0, 0, 0.7);
+.main:before {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .main .content {
@@ -251,9 +252,7 @@
 }
 
 .reviews div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inherit;
 }
 
 .reviews p {
@@ -350,11 +349,11 @@ form label:before {
 }
 
 form .name:before {
-  background: url(../images/ikons/name.png) no-repeat center center/contain;
+  background: url(../images/ikons/name.svg) no-repeat center center/contain;
 }
 
 form .email:before {
-  background: url(../images/ikons/email.png) no-repeat center center/contain;
+  background: url(../images/ikons/email.svg) no-repeat center center/contain;
 }
 
 footer {
